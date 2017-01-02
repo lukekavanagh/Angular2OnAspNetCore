@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "description": "Starter application using Angular 2 and ASP.NET Core",
   "scripts": {
-      "start": "tsc && concurrently \"tsc -w\" \"dotnet run\" "
-  },
+      "start": "tsc && concurrently \"tsc -w\" \"dotnet run\" ",
+    "install": "dotnet restore"
+},
   "keywords": [],
   "author": "",
   "license": "MIT",

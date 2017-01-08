@@ -9,18 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
+var PairingComponent = (function () {
+    function PairingComponent() {
+        this.food = 'kielbasa';
     }
-    return AppComponent;
+    PairingComponent.prototype.foodInput = function (event) {
+        var target = event.target;
+        this.food = target.value;
+    };
+    return PairingComponent;
 }());
-AppComponent = __decorate([
+PairingComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
-        selector: 'my-app',
-        template: "\n        <nav>\n            <a routerLink=\"/pairing\">Pairing</a> | \n            <a routerLink=\"/about\">About</a>            \n        </nav>\n        <router-outlet></router-outlet>\n    ",
+        selector: 'my-pairing',
+        template: "\n        <h2>Pairing</h2>\n        <input type=\"text\" [value]=\"food\" (input)=\"foodInput($event)\"/>        \n        <p>Sriracha sauce is great with {{ food }}</p>\n    ",
     }),
     __metadata("design:paramtypes", [])
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], PairingComponent);
+exports.PairingComponent = PairingComponent;
+//# sourceMappingURL=pairing.component.js.map

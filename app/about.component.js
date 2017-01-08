@@ -9,18 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
+var AboutComponent = (function () {
+    function AboutComponent() {
     }
-    return AppComponent;
+    return AboutComponent;
 }());
-AppComponent = __decorate([
+AboutComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
-        selector: 'my-app',
-        template: "\n        <nav>\n            <a routerLink=\"/pairing\">Pairing</a> | \n            <a routerLink=\"/about\">About</a>            \n        </nav>\n        <router-outlet></router-outlet>\n    ",
+        selector: 'my-about',
+        template: "\n        <h2>About Sriracha</h2>\n\n        <p>This is what Wikipedia says about <a href=\"https://en.wikipedia.org/wiki/Sriracha_sauce_%28Huy_Fong_Foods%29\">Sriracha sauce</a>:</p>\n\n        <blockquote>It can be recognized by its bright red color and its packaging: a clear plastic bottle with a green cap, text in Vietnamese, English, Chinese, French, and Spanish, and the rooster logo. David Tran was born in 1945, the Year of the Rooster...<blockquote>\n    ",
     }),
     __metadata("design:paramtypes", [])
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], AboutComponent);
+exports.AboutComponent = AboutComponent;
+//# sourceMappingURL=about.component.js.map
